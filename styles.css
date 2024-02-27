@@ -1,7 +1,7 @@
 /* 
     This is a CSS comment. Please add your name to this file below:
     
-    NAME: 
+    NAME: Jake Sturges
 */
 /* -------------------------------------------------- */
 /* 
@@ -343,6 +343,13 @@ footer{
     border: 4px solid var(--dk-blue);
     margin: 1rem auto;
     border-radius: 0 24px 24px 0;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: var(--box-shadow-lg);
 }
 
 /* For the paragraph with placeholder text */
@@ -358,6 +365,12 @@ footer{
     border: 6px solid var(--lt-blue);
     margin: 1rem auto 2rem auto;
     border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
 }
 
 /* For the last paragraph in the section */
@@ -377,7 +390,10 @@ footer{
             - left: 60px
 */
 #section2 div > p:last-of-type{
-    
+    background-color: var(--dk-teal-rgba);
+    border: 4px darkgray dashed;
+    margin: 16px 60px 32px 8px;
+    padding: 32px 8px 16px 60px;
 }
 
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
@@ -394,6 +410,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
+    background-color: darkblue;
+    color: white;
+    border-color: var(--lt-blue);
+    box-shadow: var(--box-shadow-sm);
 
 }
 
@@ -418,6 +438,11 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    filter: var(--filter-shadow-sm);
     
 }
 
@@ -460,6 +485,16 @@ footer{
         - move this to the right from its original location by 25px
 */
 #section3 div::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    bottom: 50px;
+    left: 25px;
 }
 
 
@@ -481,7 +516,7 @@ footer{
             - left: 0
 */
 #section4 p:last-of-type{
-
+    margin: 1rem 0;
 }
 
 /* ------------- SECTION 5 STYLES ---------------- */
@@ -518,7 +553,10 @@ footer{
         - add the puppy-photo as a repeating background to the container
 */
 #bg-img-3{
-    
+    background-color: var(--lt-blue);
+    background-image: url(images/puppy-photo.jpg);
+    background-position: center;
+    background-repeat: repeat;    
 }
 
 /* For the fourth div, let's style this like the second div, but let's change the height of the div to 100px, so it fits the height of the image. It will make it look like the image and div are the same height */
@@ -545,7 +583,7 @@ footer{
         - add the wood background texture from the images folder
 */
 #pattern1{
-    
+    background: url("images/wood.png") var(--light-gray);    
 }
 
 /* For the second div, the pattern is from from Hero Pattern. These actually give you SVG code to paste into your CSS */
@@ -602,6 +640,7 @@ footer{
         - float the image to the right
 */
 #dog-house{
+    float: right;
     
 }
 
@@ -611,7 +650,7 @@ footer{
         - clear any floats
 */
 #section9{
-    
+    float: none;
 }
 
 /* ------------- SECTION 9 STYLES ---------------- */
